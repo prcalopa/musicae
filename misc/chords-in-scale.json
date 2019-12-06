@@ -1,0 +1,4 @@
+{
+  "phrygian": ["m", "M", "M", "m", "dim", "M", "m"],
+  "aeolian": ["m",	"dim", "M", "m", "m", "M", "M"]
+}

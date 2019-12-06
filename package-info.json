@@ -1,0 +1,34 @@
+{
+	"author" : "pere calopa",
+	"authors" : [  ],
+	"description" : "Musicae provides a collection of tools to assist music creation",
+	"displayname" : "Musicae",
+	"extends" : "",
+	"extensible" : 0,
+	"homepatcher" : "musical.playground.tonal.maxpat",
+	"max_version_max" : "none",
+	"max_version_min" : "8.0.0",
+	"name" : "musicae",
+	"os" : 	{
+		"macintosh" : 		{
+			"platform" : [ "ia32", "x64" ],
+			"min_version" : "10.x.x"
+		}
+,
+		"windows" : 		{
+			"platform" : [ "ia32", "x64" ],
+			"min_version" : "7"
+		}
+
+	}
+,
+	"tags" : [ "music creation", "composition" ],
+	"version" : "0.0.1",
+	"website" : "",
+	"filelist" : 	{
+		"extras" : [ "musical.playground.tonal.maxpat" ]
+	}
+,
+	"c74install" : 1,
+	"installdate" : 3595519884
+}
