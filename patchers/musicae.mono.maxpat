@@ -56,8 +56,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 171.0, 713.0, 94.0, 22.0 ],
-					"text" : "r scale-changed"
+					"patching_rect" : [ 171.0, 713.0, 106.0, 22.0 ],
+					"text" : "r ---scale-changed"
 				}
 
 			}
@@ -79,8 +79,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 149.666656494140625, 95.0, 96.0, 22.0 ],
-					"text" : "s scale-changed"
+					"patching_rect" : [ 149.666656494140625, 95.0, 108.0, 22.0 ],
+					"text" : "s ---scale-changed"
 				}
 
 			}
@@ -244,8 +244,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 308.178558349609375, 697.5, 91.0, 22.0 ],
-					"text" : "r midi-vel-mono"
+					"patching_rect" : [ 308.178558349609375, 697.5, 103.0, 22.0 ],
+					"text" : "r ---midi-vel-mono"
 				}
 
 			}
@@ -293,8 +293,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 294.261810302734375, 626.5, 106.0, 22.0 ],
-					"text" : "r note-offset-mono"
+					"patching_rect" : [ 294.261810302734375, 626.5, 118.0, 22.0 ],
+					"text" : "r ---note-offset-mono"
 				}
 
 			}
@@ -435,12 +435,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-87",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 709.0001220703125, 248.0, 99.0, 35.0 ],
-					"text" : "s note-offset-mono"
+					"patching_rect" : [ 709.0001220703125, 248.0, 120.0, 22.0 ],
+					"text" : "s ---note-offset-mono"
 				}
 
 			}
@@ -498,8 +497,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 755.00006103515625, 97.0, 98.0, 22.0 ],
-					"text" : "s midi-vel-mono"
+					"patching_rect" : [ 755.00006103515625, 97.0, 105.0, 22.0 ],
+					"text" : "s ---midi-vel-mono"
 				}
 
 			}
@@ -774,12 +773,12 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 281.178558349609375, 367.5, 75.0, 22.0 ],
+					"patching_rect" : [ 281.178558349609375, 367.5, 87.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
 ,
-					"text" : "coll scale-pc"
+					"text" : "coll ---scale-pc"
 				}
 
 			}

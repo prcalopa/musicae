@@ -44,8 +44,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 829.16668701171875, 1032.83349609375, 94.0, 22.0 ],
-					"text" : "r scale-changed"
+					"patching_rect" : [ 829.16668701171875, 1032.83349609375, 106.0, 22.0 ],
+					"text" : "r ---scale-changed"
 				}
 
 			}
@@ -55,8 +55,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 29.0, -17.5, 96.0, 22.0 ],
-					"text" : "s scale-changed"
+					"patching_rect" : [ 29.0, -17.5, 108.0, 22.0 ],
+					"text" : "s ---scale-changed"
 				}
 
 			}
@@ -2527,8 +2527,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 778.16668701171875, 992.5, 57.0, 22.0 ],
-					"text" : "r midi-vel"
+					"patching_rect" : [ 778.16668701171875, 992.5, 69.0, 22.0 ],
+					"text" : "r ---midi-vel"
 				}
 
 			}
@@ -2603,8 +2603,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 633.92852783203125, 863.5, 95.0, 22.0 ],
-					"text" : "r midi-input-gate"
+					"patching_rect" : [ 633.92852783203125, 863.5, 107.0, 22.0 ],
+					"text" : "r ---midi-input-gate"
 				}
 
 			}
@@ -2627,8 +2627,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 713.83331298828125, -40.0, 95.0, 22.0 ],
-					"text" : "r midi-input-gate"
+					"patching_rect" : [ 713.83331298828125, -40.0, 107.0, 22.0 ],
+					"text" : "r ---midi-input-gate"
 				}
 
 			}
@@ -2650,8 +2650,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 538.8570556640625, -68.0, 97.0, 22.0 ],
-					"text" : "s midi-input-gate"
+					"patching_rect" : [ 538.8570556640625, -68.0, 109.0, 22.0 ],
+					"text" : "s ---midi-input-gate"
 				}
 
 			}
@@ -2686,8 +2686,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 764.24993896484375, 769.5, 72.0, 22.0 ],
-					"text" : "r note-offset"
+					"patching_rect" : [ 764.24993896484375, 769.5, 84.0, 22.0 ],
+					"text" : "r ---note-offset"
 				}
 
 			}
@@ -2697,8 +2697,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1010.24993896484375, 70.0, 81.0, 22.0 ],
-					"text" : "s note-offset"
+					"patching_rect" : [ 1010.24993896484375, 70.0, 86.0, 22.0 ],
+					"text" : "s ---note-offset"
 				}
 
 			}
@@ -2756,8 +2756,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1075.0, -92.5, 59.0, 22.0 ],
-					"text" : "s midi-vel"
+					"patching_rect" : [ 1075.0, -92.5, 71.0, 22.0 ],
+					"text" : "s ---midi-vel"
 				}
 
 			}
@@ -3592,7 +3592,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 998.83331298828125, 294.5, 50.0, 22.0 ]
+					"patching_rect" : [ 1013.83331298828125, 294.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -3664,12 +3664,12 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 713.58331298828125, 187.5, 107.0, 22.0 ],
+					"patching_rect" : [ 713.58331298828125, 187.5, 119.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
 ,
-					"text" : "coll chord-degrees"
+					"text" : "coll ---chord-degrees"
 				}
 
 			}
@@ -3692,12 +3692,12 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 919.83331298828125, 294.5, 75.0, 22.0 ],
+					"patching_rect" : [ 919.83331298828125, 294.5, 87.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
 ,
-					"text" : "coll scale-pc"
+					"text" : "coll ---scale-pc"
 				}
 
 			}
@@ -3776,12 +3776,12 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 89.5, 395.0, 107.0, 22.0 ],
+					"patching_rect" : [ 89.5, 395.0, 119.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
 ,
-					"text" : "coll chord-degrees"
+					"text" : "coll ---chord-degrees"
 				}
 
 			}
@@ -3841,12 +3841,12 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 282.83331298828125, 283.5, 75.0, 22.0 ],
+					"patching_rect" : [ 282.83331298828125, 283.5, 87.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
 ,
-					"text" : "coll scale-pc"
+					"text" : "coll ---scale-pc"
 				}
 
 			}
