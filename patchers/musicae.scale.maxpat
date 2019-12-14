@@ -39,10 +39,22 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 180.999984741210938, 172.0, 50.0, 22.0 ],
+					"text" : "getkeys"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"annotation" : "note names as a symbol list",
 					"comment" : "",
 					"id" : "obj-14",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -55,7 +67,7 @@
 					"annotation" : "root (int)",
 					"comment" : "",
 					"id" : "obj-13",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -69,7 +81,7 @@
 					"annotation" : "mode (int)",
 					"comment" : "",
 					"id" : "obj-7",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -221,7 +233,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 563.0, 290.0, 50.0, 22.0 ],
-									"text" : "A#"
+									"text" : "C"
 								}
 
 							}
@@ -287,7 +299,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 455.0, 290.0, 50.0, 22.0 ],
-									"text" : "A"
+									"text" : "A#"
 								}
 
 							}
@@ -353,7 +365,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 350.0, 290.0, 50.0, 22.0 ],
-									"text" : "G"
+									"text" : "A"
 								}
 
 							}
@@ -419,7 +431,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 250.0, 290.0, 50.0, 22.0 ],
-									"text" : "F"
+									"text" : "G"
 								}
 
 							}
@@ -485,7 +497,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 150.0, 290.0, 50.0, 22.0 ],
-									"text" : "D#"
+									"text" : "F"
 								}
 
 							}
@@ -551,7 +563,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 290.0, 50.0, 22.0 ],
-									"text" : "D"
+									"text" : "D#"
 								}
 
 							}
@@ -1015,7 +1027,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 452.5, 1060.0, 163.0, 22.0 ],
-					"text" : "D D# F G A A# C",
+					"text" : "D# F G A A# C s",
 					"textjustification" : 1
 				}
 
@@ -1043,7 +1055,7 @@
 					"annotation" : "scale: <mode> <pitch class list>",
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1081,7 +1093,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 452.5, 977.0, 196.0, 22.0 ],
-					"text" : "phrygian 2 3 5 7 9 10 12"
+					"text" : "2 3 5 7 9 10 12"
 				}
 
 			}
@@ -2062,7 +2074,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-35",
-					"items" : [ "phrygian", ",", "aeolian" ],
+					"items" : [ "phrygian", ",", "aeolian", ",", "ionian", ",", "dorian", ",", "lydian", ",", "mixolydian", ",", "locrian" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2251,6 +2263,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -2520,13 +2539,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "list-accum.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

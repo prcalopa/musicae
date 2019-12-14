@@ -1,4 +1,9 @@
 {
   "phrygian": ["m", "M", "M", "m", "dim", "M", "m"],
-  "aeolian": ["m",	"dim", "M", "m", "m", "M", "M"]
+  "aeolian": ["m",	"dim", "M", "m", "m", "M", "M"],
+  "ionian": ["M", "m", "m", "M", "M", "m", "dim"],
+  "dorian": ["m", "m", "M", "M", "m", "dim", "M"],
+  "lydian": ["M", "M", "m", "dim", "M", "m", "m"],
+  "mixolydian": ["M", "m", "dim", "M", "m", "m", "M"],
+  "locrian": ["M", "dim", "m", "m", "M", "M", "m"]
 }
