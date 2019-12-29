@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 172.0, 104.0, 798.0, 762.0 ],
+		"rect" : [ 172.0, 104.0, 946.0, 762.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,16 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-66",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 386.0, 93.0, 150.0, 20.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-32",
 					"maxclass" : "newobj",
@@ -4808,7 +4818,8 @@
 						"embed" : 0
 					}
 ,
-					"text" : "coll ---scale-pc"
+					"text" : "coll ---scale-pc",
+					"varname" : "scale-pc-coll"
 				}
 
 			}
@@ -6061,12 +6072,12 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-43" : [ "4th", "4th", 0 ],
-			"obj-18" : [ "live.tab[2]", "live.tab", 0 ],
 			"obj-56" : [ "1st", "1st", 0 ],
 			"obj-11" : [ "add_7th", "add_7th", 0 ],
-			"obj-44" : [ "3rd", "3rd", 0 ],
+			"obj-18" : [ "live.tab[2]", "live.tab", 0 ],
 			"obj-45" : [ "2nd", "2nd", 0 ],
+			"obj-44" : [ "3rd", "3rd", 0 ],
+			"obj-43" : [ "4th", "4th", 0 ],
 			"parameterbanks" : 			{
 
 			}
