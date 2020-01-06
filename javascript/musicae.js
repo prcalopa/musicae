@@ -4,16 +4,22 @@ inlets=1;
 outlets=2;
 
 var utils = require("musicae-utils");
-// player
 
 // Scale degrees absolute pitch value
 var scalePitchClasses;
 // Scale chord modes
 var scaleChordModes;
+
 // Chord partials velocities
 var velocities = [1.0,1.0,1.0,1.0];
+/// Velocities random range
+var velocitiesRandomRanges = [40,40,40,40];
+// Velocities random modes
+var velocitiesRandomModes = ["add", "add", "add", "add"];
+
 // Chord extension
 var add7th = 0;
+
 
 // Constants (initialized in init function)
 // Mono and Poly player
@@ -78,11 +84,12 @@ function playNote(inputPitch, velocity)
   const pitch = scalePitchClasses[degree]+noteOffset;
 
   // Create note with pitch and velocity values
-  const noteWithVel = ["chord", pitch, velocity];
+  var note = utils.makeNotes([pitch], velocities, velocity);
+  note = utils.applyRandomVelocity(note, velocitiesRandomModes, velocitiesRandomRanges);
 
-  post(noteWithVel);
+  post(note);
   post();
-  outlet(0,noteWithVel);
+  outlet(0,note);
 }
 
 function playChord(inputPitch, velocity)
@@ -114,11 +121,12 @@ function playChord(inputPitch, velocity)
   const chord = utils.addConstant(currentChordPartials, currentChordRoot+noteOffset);
 
   // Create array interleaving pitch/velocity values
-  const chordWithVel = utils.interleaveVelocity(chord, velocities, velocity);
+  var notes = utils.makeNotes(chord, velocities, velocity);
+  note = utils.applyRandomVelocity(notes, velocitiesRandomModes, velocitiesRandomRanges);
 
-  post(chordWithVel);
+  post(notes);
   post();
-  outlet(0,chordWithVel);
+  outlet(0,notes);
 }
 
 function setAdd7th(flag) {
@@ -126,10 +134,28 @@ function setAdd7th(flag) {
 }
 
 function setVelocities(){
-  if (arguments.length != 4) {
+  if (arguments.length != utils.MAX_NOTES_IN_CHORD) {
     error("You must input a list of 4 velocity values")
   }
   else {
     velocities = arrayfromargs("setVelocities", arguments).slice(1);
+  }
+}
+
+function setVelocityRandomModes() {
+  if (arguments.length != utils.MAX_NOTES_IN_CHORD) {
+    error("You must input a list of 4 mode values")
+  }
+  else {
+    velocitiesRandomModes = arrayfromargs("setVelocityRandomModes", arguments).slice(1);
+  }
+}
+
+function setVelocityRandomRanges() {
+  if (arguments.length != utils.MAX_NOTES_IN_CHORD) {
+    error("You must input a list of 4 mode values")
+  }
+  else {
+    velocitiesRandomRanges = arrayfromargs("setVelocityRandomRanges", arguments).slice(1);
   }
 }
