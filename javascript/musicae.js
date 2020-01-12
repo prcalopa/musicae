@@ -85,7 +85,10 @@ function playNote(inputPitch, velocity)
 
   // Create note with pitch and velocity values
   var note = utils.makeNotes([pitch], velocities, velocity);
-  note = utils.applyRandomVelocity(note, velocitiesRandomModes, velocitiesRandomRanges);
+
+  if(velocity > 0) {
+    note = utils.applyRandomVelocity(note, velocitiesRandomModes, velocitiesRandomRanges);
+  }
 
   post(note);
   post();
@@ -122,7 +125,9 @@ function playChord(inputPitch, velocity)
 
   // Create array interleaving pitch/velocity values
   var notes = utils.makeNotes(chord, velocities, velocity);
-  note = utils.applyRandomVelocity(notes, velocitiesRandomModes, velocitiesRandomRanges);
+  if(velocity > 0) {
+    note = utils.applyRandomVelocity(notes, velocitiesRandomModes, velocitiesRandomRanges);
+  }
 
   post(notes);
   post();
