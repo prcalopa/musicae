@@ -4,10 +4,6 @@
 ### Use in Ableton Live
 M4L devices are located in ~/Documents/Max/Packages/musicae/devices
 
-#### Devices
-- musicae.mono
-- musicae.chord
-
 ### Description
 
 Play, improvise and compose music using *scale agnostic* midi sequences.
@@ -18,9 +14,9 @@ Play, improvise and compose music using *scale agnostic* midi sequences.
 
 Musicae is a simple approach to abstract MIDI notes to higher lever entities representing **note/chord degree** values. Meaning, incoming pitch values don't represent anymore their actual absolute pitch, but the **note/chord degree** they represent in the chosen scale.
 
-**musicae.mono** map incoming MIDI note(s) to note degree(s) in the modal scale.
+**MONO** map incoming MIDI note(s) to note degree(s) in the modal scale.
 
-**musicae.chord** map incoming MIDI notes to chord degrees in the modal scale. (yes, you play chords just playing a single note)
+**POLY** map incoming MIDI notes to chord degrees in the modal scale. (yes, you play chords just playing a single note)
 
 More advantages about encoding sequences based on **note/chord degree**  (and not absolute pitch values) are:
 - (re)play a sequence as it is played in any scale.
