@@ -1,5 +1,18 @@
 # Musicae
-## Music creation tools
+### Install
+1. Cloning repository
+
+Open terminal and navigate to Max Packages folder
+
+`cd ~/Documents/Max\ 8/Packages⁩`
+
+Clone this repository
+
+`git clone <this_repo_url>`
+
+2. Download zip
+
+Copy the downloaded zip to Max Packages folder
 
 ### Use in Ableton Live
 M4L devices are located in ~/Documents/Max/Packages/musicae/devices
